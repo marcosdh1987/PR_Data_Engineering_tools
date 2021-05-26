@@ -23,25 +23,25 @@ PostgreSQL:
 $ sudo -u postgres psql\
 ALTER USER marcosdb WITH Superuser;\
 #to show list of roles\
-\du\
+\du
 
-Aiflow:
+Aiflow:\
 
-We’ll change settings in pg_hb.conf file for required configuration as per Airflow. 
-You can run command SHOW hba_file to find location of pg_hba.conf file.
-Most likely located at pg_hb.conf located at /etc/postgresql/*/main/pg_hba.conf
+We’ll change settings in pg_hb.conf file for required configuration as per Airflow.\ 
+You can run command SHOW hba_file to find location of pg_hba.conf file.\
+Most likely located at pg_hb.conf located at /etc/postgresql/*/main/pg_hba.conf\
 
-sudo nano /etc/postgresql/*/main/pg_hba.conf
+sudo nano /etc/postgresql/*/main/pg_hba.conf\
 
-open this file with vim and change ipv4 address to 0.0.0.0/0 and listen_addresses to listen_addresses = ‘*’.
+open this file with vim and change ipv4 address to 0.0.0.0/0 and listen_addresses to listen_addresses = ‘*’.\
 
-We will restart PostgreSQL to load changes.
+We will restart PostgreSQL to load changes.\
 
-airflow webserver --port 8081
+airflow webserver --port 8081\
 
-airflow init db
+airflow init db\
 
-airflow scheduler
+airflow scheduler\
 
 
 Filesnames for learning purposes:\
