@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS modbus_data (
+	data_id serial PRIMARY KEY ,
+	register VARCHAR ( 50 ) NOT NULL,
+	value VARCHAR ( 50 ) NOT NULL,
+	Description VARCHAR ( 255 ) NOT NULL,
+	created_on TIMESTAMP NULL,
+    last_login TIMESTAMP 
+);
+
+INSERT INTO modbus_data(register, value, description)
+VALUES (15, 91.3, 'Pressure');
+
+#from python side:
+cur.execute("INSERT INTO modbus_data(register, value, description) VALUES (%s, %s, %s)",(var1,var2,var3));
+
+select * from modbus_data;
+
+DELETE FROM modbus_data;
