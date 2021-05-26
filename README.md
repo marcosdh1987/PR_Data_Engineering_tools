@@ -10,20 +10,20 @@ Architecture:
 ![image](https://user-images.githubusercontent.com/31476977/119668857-e9b90080-be0d-11eb-889f-773e306c353f.png)
 
 
-Tools:
-•	Ubuntu 20.04 OS
-•	Apache Airflow
-•	PostgreSQL + pgAdmin
+Tools:\
+•	Ubuntu 20.04 OS\
+•	Apache Airflow\
+•	PostgreSQL + pgAdmin\
 
 
 Installation commands:
 
 PostgreSQL:
-#to connect
-$ sudo -u postgres psql
-ALTER USER marcosdb WITH Superuser;
-#to show list of roles
-\du
+#to connect\
+$ sudo -u postgres psql\
+ALTER USER marcosdb WITH Superuser;\
+#to show list of roles\
+\du\
 
 Aiflow:
 
@@ -44,12 +44,12 @@ airflow init db
 airflow scheduler
 
 
-Filesnames for learning purposes:
-•	-
+Filesnames for learning purposes:\
+•	-\
 
-Filesname deployed:
-•	pydag.py
-•	Modbus_DDS.xlsx
-•	BD_Arch.vsdx
+Filesname deployed:\
+•	pydag.py\
+•	Modbus_DDS.xlsx\
+•	BD_Arch.vsdx\
 
 
