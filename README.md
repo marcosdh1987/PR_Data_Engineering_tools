@@ -45,11 +45,11 @@ airflow scheduler
 
 
 Filesnames for learning purposes:\
-•	[a relative link](Modbus_AFC_V001.ipynb)Modbus_AFC_V001.ipynb
+•	[Modbus_AFC_V001](Modbus_AFC_V001.ipynb)
 
 Filesname deployed:\
-•	pydag.py\
-•	Modbus_DDS.xlsx\
-•	BD_Arch.vsdx
+•	[pydag](pydag.py)\
+•	[Modbus_DDS](Modbus_DDS.xlsx)\
+•	[BD_Arch](BD_Arch.vsdx)
 
 
