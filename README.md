@@ -45,7 +45,8 @@ airflow scheduler
 
 
 Filesnames for learning purposes:\
-•	[Modbus_AFC_V001](Modbus_AFC_V001.ipynb)
+•	[Modbus_AFC_V001](Modbus_AFC_V001.ipynb)\
+• [some_querys](some_querys)
 
 Filesname deployed:\
 •	[pydag](pydag.py)\
