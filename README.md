@@ -51,11 +51,17 @@ use script [winscp](winscp.bat)
 
 Filesnames for learning purposes:\
 •	[Modbus_AFC_V001](Modbus_AFC_V001.ipynb)\
-• [some_querys](some_querys)
+• [some_querys](some_querys)\
 
 Filesname deployed:\
 •	[pydag](pydag.py)\
 •	[Modbus_DDS](Modbus_DDS.xlsx)\
-•	[BD_Arch](BD_Arch.vsdx)
+•	[BD_Arch](BD_Arch.vsdx)\
+
+
+Full Dig Data architecture (with azure):\
+
+![image](https://user-images.githubusercontent.com/31476977/119707440-893bba80-be31-11eb-94ce-ae6f6e741fec.png)
+
 
 
