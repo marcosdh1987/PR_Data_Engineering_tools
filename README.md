@@ -11,12 +11,12 @@ Architecture:
 
 
 Tools:
--Ubuntu 20.04 OS
--Apache Airflow
--PostgreSQL + pgAdmin
+•	Ubuntu 20.04 OS
+•	Apache Airflow
+•	PostgreSQL + pgAdmin
 
 
-Instalation commands:
+Installation commands:
 
 PostgreSQL:
 #to connect
@@ -45,11 +45,11 @@ airflow scheduler
 
 
 Filesnames for learning purposes:
--
+•	-
 
 Filesname deployed:
--pydag.py
--Modbus_DDS.xlsx
--BD_Arch.vsdx
+•	pydag.py
+•	Modbus_DDS.xlsx
+•	BD_Arch.vsdx
 
 
