@@ -14,6 +14,7 @@ Tools:\
 •	Ubuntu 20.04 OS\
 •	Apache Airflow\
 •	PostgreSQL + pgAdmin
+• WinSCP
 
 
 Installation commands:
@@ -42,6 +43,10 @@ airflow webserver --port 8081
 airflow init db
 
 airflow scheduler
+
+winSCP:
+use script [winscp](winscp.bat)
+
 
 
 Filesnames for learning purposes:\
