@@ -61,7 +61,8 @@ Filesname deployed:\
 
 Full Dig Data architecture (with azure):\
 
-![image](https://user-images.githubusercontent.com/31476977/119707440-893bba80-be31-11eb-94ce-ae6f6e741fec.png)
+![image](https://user-images.githubusercontent.com/31476977/119707587-b12b1e00-be31-11eb-8c68-edc43bc1b538.png)
+
 
 
 
