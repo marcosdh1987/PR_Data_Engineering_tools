@@ -13,7 +13,7 @@ Architecture:
 Tools:\
 •	Ubuntu 20.04 OS\
 •	Apache Airflow\
-•	PostgreSQL + pgAdmin\
+•	PostgreSQL + pgAdmin
 
 
 Installation commands:
@@ -50,6 +50,6 @@ Filesnames for learning purposes:\
 Filesname deployed:\
 •	pydag.py\
 •	Modbus_DDS.xlsx\
-•	BD_Arch.vsdx\
+•	BD_Arch.vsdx
 
 
