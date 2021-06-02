@@ -76,9 +76,12 @@ exit
 
 #to connect with postgresql\
 $ sudo -u postgres psql\
-ALTER USER marcosdb WITH Superuser;\
+ALTER USER ubuntu WITH login;\
 #to show list of roles\
 \du
+Giving the user a password
+$ sudo -u postgres psql
+psql=# alter user <username> with encrypted password '<password>';
 
 ### Airflow installation
 pip install apache-airflow
