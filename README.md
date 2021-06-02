@@ -43,7 +43,10 @@ next the airflow user and pass are same.
 note:
 to install pandas in powershell (py -m pip install pandas)
 
-###Option 2 Installation commands:
+## Option 2 Installation commands (ubuntu 20.04):
+
+sudo apt update
+sudo apt install python3-pip
 
 #### pip update
 sudo pip install --upgrade pip
@@ -69,11 +72,18 @@ connect to airflow database and get connection information
 postgres-# \c airflow
 airflow=# \conninfo
 
+exit 
+
 #to connect with postgresql\
 $ sudo -u postgres psql\
 ALTER USER marcosdb WITH Superuser;\
 #to show list of roles\
 \du
+
+### Airflow installation
+pip install apache-airflow
+
+echo "export PATH=\"/home/marcos/.local/bin:\$PATH\"" >> ~/.bashrc && source ~/.bashrc
 
 
 We’ll change settings in pg_hb.conf file for required configuration as per Airflow.\
@@ -84,17 +94,58 @@ sudo nano /etc/postgresql/*/main/pg_hba.conf
 
 open this file with vim and change ipv4 address to 0.0.0.0/0 and listen_addresses to listen_addresses = ‘*’.
 
+### create an admin user
+airflow users create \
+    --username admin \
+    --firstname Marcos \
+    --lastname Soto \
+    --role Admin \
+    --email marcos.esteban.soto@gmail.com
+
 We will restart PostgreSQL to load changes.
 
 sudo service postgresql restart
 
 Aiflow:
 
-airflow webserver --port 8081
+pip install pandas
+pip install xlrd
+pip install openpyxl
+pip install pymodbus
+pip install launchpadlib
+pip install psycopg2
+pip install psycopg2-binary
 
-airflow init db
+airflow db init 
 
 airflow scheduler
+
+airflow webserver --port 8081
+
+grant vnc access to server:
+$ sudo apt update
+$ sudo ufw allow 5900/tcp
+$ sudo apt install xfce4 xfce4-goodies
+$ sudo apt install tightvncserver
+$ vncserver
+then you can add a password
+
+to share folders:
+sudo apt-get install samba
+sudo cp /etc/samba/smb.conf ~
+sudo nano /etc/samba/smb.conf
+
+[sharedfolder]
+path = /home/USERNAME/sharedfolder
+available = yes
+valid users = USERNAME
+read only = no
+browsable = yes
+public = yes
+writable = yes
+
+$ sudo smbpasswd -a <user_name>
+
 
 winSCP:
 use script [winscp](winscp.bat)
