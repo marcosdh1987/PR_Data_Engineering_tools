@@ -149,8 +149,13 @@ writable = yes
 
 $ sudo smbpasswd -a <user_name>
 
+## Azure DB note
+   to use SQL you need to install
+    
+!apt install unixodbc-dev
+!pip install pyodbc
 
-winSCP:
+## winSCP:
 use script [winscp](winscp.bat)
 
 
