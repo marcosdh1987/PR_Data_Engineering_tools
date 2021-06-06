@@ -1,3 +1,5 @@
+PostgreSQL sintax
+
 CREATE TABLE IF NOT EXISTS modbus_data (
 	data_id serial PRIMARY KEY ,
 	register VARCHAR ( 50 ) NOT NULL,
@@ -16,3 +18,36 @@ cur.execute("INSERT INTO modbus_data(register, value, description) VALUES (%s, %
 select * from modbus_data;
 
 DELETE FROM modbus_data;
+
+
+Azure SQL
+
+CREATE TABLE modbus_data (
+	data_id int PRIMARY KEY ,
+	register VARCHAR ( 50 ) NOT NULL,
+	value VARCHAR ( 50 ) NOT NULL,
+	Description VARCHAR ( 255 ) NOT NULL,
+	created_on TIMESTAMP NULL
+);
+
+INSERT INTO dbo.modbus_data(data_id,register, value, description)
+VALUES (2,15, 91.3, 'Pressure');
+
+
+to connect from python
+
+import pyodbc
+server = '<>.database.windows.net'
+database = 'database'
+username = 'username'
+password = 'password'   
+driver= '{ODBC Driver 17 for SQL Server}'
+
+with pyodbc.connect('DRIVER='+driver+';SERVER='+server+';PORT=1433;DATABASE='+database+';UID='+username+';PWD='+ password) as conn:
+    with conn.cursor() as cursor:
+        cursor.execute("SELECT TOP 3 name, collation_name FROM sys.databases")
+        row = cursor.fetchone()
+        while row:
+            print (str(row[0]) + " " + str(row[1]))
+            row = cursor.fetchone()
+
