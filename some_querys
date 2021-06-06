@@ -27,14 +27,13 @@ CREATE TABLE dbo.modbus_data (
 	register VARCHAR ( 50 ) NOT NULL,
 	value VARCHAR ( 50 ) NOT NULL,
 	Description VARCHAR ( 255 ) NOT NULL,
-	created_on TIMESTAMP NULL,
+	unit VARCHAR ( 50 ) NULL,
+	created_on DATETIME NULL,
 	PRIMARY KEY (data_id)
 );
 
 INSERT INTO dbo.modbus_data(register, value, description)
 VALUES (15, 91.3, 'Pressure');
-
-
 
 
 drop table dbo.modbus_data;
