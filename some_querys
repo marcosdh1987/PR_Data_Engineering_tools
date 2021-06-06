@@ -22,16 +22,22 @@ DELETE FROM modbus_data;
 
 Azure SQL
 
-CREATE TABLE modbus_data (
-	data_id int PRIMARY KEY ,
+CREATE TABLE dbo.modbus_data (
+	data_id INT NOT NULL IDENTITY(1, 1),
 	register VARCHAR ( 50 ) NOT NULL,
 	value VARCHAR ( 50 ) NOT NULL,
 	Description VARCHAR ( 255 ) NOT NULL,
-	created_on TIMESTAMP NULL
+	created_on TIMESTAMP NULL,
+	PRIMARY KEY (data_id)
 );
 
-INSERT INTO dbo.modbus_data(data_id,register, value, description)
-VALUES (2,15, 91.3, 'Pressure');
+INSERT INTO dbo.modbus_data(register, value, description)
+VALUES (15, 91.3, 'Pressure');
+
+
+
+
+drop table dbo.modbus_data;
 
 
 to connect from python
