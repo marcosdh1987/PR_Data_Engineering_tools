@@ -154,6 +154,9 @@ $ sudo smbpasswd -a <user_name>
     
 !apt install unixodbc-dev
 !pip install pyodbc
+    
+    and see https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-ver15
+    
 
 ## winSCP:
 use script [winscp](winscp.bat)
