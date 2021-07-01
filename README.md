@@ -176,9 +176,22 @@ Filesname deployed:\
 •	[BD_Arch](BD_Arch.vsdx)\
 
 
-Full Dig Data architecture (with azure):\
+Big Data architecture Option 1 (From csv to webapp cloud):\
 
-![image](https://user-images.githubusercontent.com/31476977/119707587-b12b1e00-be31-11eb-8c68-edc43bc1b538.png)
+![image](https://user-images.githubusercontent.com/31476977/124121106-df140b80-da4a-11eb-9552-1712f797d5e0.png)
+    
+Big Data architecture Option 2 (From csv + streaming data to physical airflow  + webapp cloud):\
+   
+![image](https://user-images.githubusercontent.com/31476977/124121256-0ff44080-da4b-11eb-8e71-f3900b962c95.png)
+    
+Big Data architecture Option 3 (From csv + streaming data to cloud airflow  + webapp cloud):\
+    
+![image](https://user-images.githubusercontent.com/31476977/124121518-5d70ad80-da4b-11eb-933e-d93d38c3f30d.png)
+
+Big Data architecture Option 4 (From csv + streaming data to to physical + firewall + webapp behind fw):\
+    
+![image](https://user-images.githubusercontent.com/31476977/124122227-3d8db980-da4c-11eb-8379-70c9ebf59c3c.png)
+
 
 
 
