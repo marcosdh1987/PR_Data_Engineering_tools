@@ -5,7 +5,7 @@ Scope of work:
 
 this repository collects the Engineering tools tested for the development proposal in the field operations
 
-Architecture:
+Draft Architecture:
 
 ![image](https://user-images.githubusercontent.com/31476977/119668857-e9b90080-be0d-11eb-889f-773e306c353f.png)
 
