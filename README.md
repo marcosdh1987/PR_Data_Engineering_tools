@@ -193,6 +193,10 @@ Big Data architecture Option 4 (From csv + streaming data to to physical + firew
 ![image](https://user-images.githubusercontent.com/31476977/124122227-3d8db980-da4c-11eb-8379-70c9ebf59c3c.png)
 
 
+Data orchestation diagram for test:\
+    
+![image](https://user-images.githubusercontent.com/31476977/124125713-526c4c00-da50-11eb-9cb1-1a36bb25b4cf.png)
+
 
 
 
