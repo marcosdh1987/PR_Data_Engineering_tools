@@ -56,3 +56,9 @@ with pyodbc.connect('DRIVER='+driver+';SERVER='+server+';PORT=1433;DATABASE='+da
             print (str(row[0]) + " " + str(row[1]))
             row = cursor.fetchone()
 
+
+
+#postgresql connection
+        cnx = create_engine(postgres_str)
+
+        df = pd.read_sql_query('''SELECT * FROM modbus_data WHERE "created_on" BETWEEN NOW() - INTERVAL '6 HOURS' AND NOW()''', con=cnx)
