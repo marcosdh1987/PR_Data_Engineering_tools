@@ -3,8 +3,8 @@
 "C:\Program Files (x86)\WinSCP\WinSCP.com" ^
   /log="C:\winscplog\WinSCP.log" /ini=nul ^
   /command ^
-    "open ftp://testuser:32922161@melectronica.ddns.net/" ^
-    "put \\HMIG5U_427E74\c$\logs\ /home/testuser/logs/" ^    
+    "open ftp://marcos:32922161@melectronica.ddns.net/" ^
+    "put C:\logs\* /home/marcos/ftpdata/logs/" ^    
     "exit"
 
 set WINSCP_RESULT=%ERRORLEVEL%
